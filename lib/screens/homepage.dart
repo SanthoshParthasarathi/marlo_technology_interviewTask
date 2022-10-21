@@ -26,37 +26,6 @@ class _HomePageState extends State<HomePage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-      bottomNavigationBar: BottomNavigationBar(
-          showUnselectedLabels: true,
-          unselectedItemColor: Colors.grey[500],
-          selectedItemColor: Colors.blue,
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              title: Text('Home'),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.attach_money_sharp),
-              title: Text('Loans'),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.file_present),
-              title: Text('Contracts'),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.group),
-              title: Text('Teams'),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.chat),
-              title: Text('Chat'),
-            ),
-          ],
-          type: BottomNavigationBarType.shifting,
-          currentIndex: _selectedIndex,
-          iconSize: 40,
-          onTap: _onItemTapped,
-          elevation: 5),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marlo_interview_task/screens/firstscreen.dart';
 import 'package:marlo_interview_task/screens/homepage.dart';
 import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
 
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
       theme: lightThemeData,
       darkTheme: darkThemeData,
       themeMode: EasyDynamicTheme.of(context).themeMode,
-      home: HomePage(),
+      home: FirstScreen(),
     );
   }
 }
